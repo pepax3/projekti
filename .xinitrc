@@ -1,4 +1,3 @@
-cat > ~/.xinitrc <<'EOF'
 #!/bin/sh
 
 [ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
@@ -26,6 +25,3 @@ if command -v polybar >/dev/null 2>&1; then
 fi
 
 exec dwm
-EOF
-
-chmod +x ~/.xinitrc
